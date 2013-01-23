@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2970ED0DA6E04075B03AFA19 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED177B235DD845EDB44936EE /* libPods.a */; };
-		F68F911A148FA06A00E92A97 /* SoundCloud.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F68F9119148FA06A00E92A97 /* SoundCloud.bundle */; };
 		F69EA06013EC04E50050BF4C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69EA05F13EC04E50050BF4C /* UIKit.framework */; };
 		F69EA06213EC04E50050BF4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69EA06113EC04E50050BF4C /* Foundation.framework */; };
 		F69EA06413EC04E50050BF4C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69EA06313EC04E50050BF4C /* CoreGraphics.framework */; };
@@ -34,7 +33,6 @@
 /* Begin PBXFileReference section */
 		AB1F12E6F7CE4DBBB7835299 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		ED177B235DD845EDB44936EE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		F68F9119148FA06A00E92A97 /* SoundCloud.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SoundCloud.bundle; path = ../CocoaSoundCloudUI/SoundCloud.bundle; sourceTree = "<group>"; };
 		F68F911B148FA0A600E92A97 /* libJSONKit.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libJSONKit.a; path = "../JSONKit/build/Release-iphoneos/libJSONKit.a"; sourceTree = "<group>"; };
 		F68F911C148FA0A600E92A97 /* libOAuth2Client.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libOAuth2Client.a; path = "../OAuth2Client/build/Release-iphoneos/libOAuth2Client.a"; sourceTree = "<group>"; };
 		F68F911D148FA0A600E92A97 /* libOHAttributedLabel.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libOHAttributedLabel.a; path = "../OHAttributedLabel/build/Release-iphoneos/libOHAttributedLabel.a"; sourceTree = "<group>"; };
@@ -75,12 +73,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F68F9120148FA0A600E92A97 /* libJSONKit.a in Frameworks */,
-				F68F9121148FA0A600E92A97 /* libOAuth2Client.a in Frameworks */,
-				F68F9122148FA0A600E92A97 /* libOHAttributedLabel.a in Frameworks */,
-				F68F9123148FA0A600E92A97 /* libSoundCloudAPI.a in Frameworks */,
-				F68F9124148FA0A600E92A97 /* libSoundCloudUI.a in Frameworks */,
-				F69FA35C14163135007AB53A /* CoreText.framework in Frameworks */,
 				F69EA0A713EC06950050BF4C /* QuartzCore.framework in Frameworks */,
 				F69EA0A413EC06780050BF4C /* AddressBook.framework in Frameworks */,
 				F69EA0A513EC06780050BF4C /* AddressBookUI.framework in Frameworks */,
@@ -100,7 +92,6 @@
 		F68F9118148FA05300E92A97 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F68F9119148FA06A00E92A97 /* SoundCloud.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -253,7 +244,6 @@
 				F69EA0B913EC09090050BF4C /* 1375_sleep_90_bpm_nylon2.wav in Resources */,
 				F6EE630B13F50AB800D6E509 /* darkTexturedBackgroundPattern.png in Resources */,
 				F6EE630C13F50AB800D6E509 /* darkTexturedBackgroundPattern@2x.png in Resources */,
-				F68F911A148FA06A00E92A97 /* SoundCloud.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +314,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Tobias Kräntzer (9DJDR8GAQA)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -344,7 +334,7 @@
 					"-all_load",
 					"-ObjC",
 				);
-				PROVISIONING_PROFILE = "3095135F-924F-418D-8329-A94A18B2784F";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
