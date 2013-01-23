@@ -1,3 +1,3 @@
 #### Setup
-##### Demo Project with CocoaPods
-After you have cloned this repo and checkeout `origin/feature/demo-proj-with-cocoapods` you need to run `pod install` to be ready to go.
+##### Demo Project with [CocoaPods](http://cocoapods.org/)
+After cloning this repo and checkout `origin/feature/demo-proj-with-cocoapods` you need to run `pod install` to be ready to go.
